@@ -267,18 +267,33 @@
     <section class="card" id="quote">
       <h2>Get a Free, Honest Quote</h2>
       <p>Tell us your car or project details. We’ll text or email you a real price—no pressure.</p>
-      <div class="form-area">
-        <form action="mailto:your@email.com" method="POST" enctype="text/plain">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="contact">Phone or Email</label>
-          <input type="text" id="contact" name="contact" required>
-          <label for="details">Vehicle/Project Info</label>
-          <textarea id="details" name="details" rows="3" placeholder="Year, Make, Model or Describe Your Project" required></textarea>
-          <button class="button" type="submit">Request Quote</button>
-        </form>
-      </div>
-    </section>
+     <!-- Replace the entire form-area div in your index.html with this: -->
+<div class="form-area" id="quote-form-area">
+  <form id="quote-form" onsubmit="return showSuccess()">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="contact">Phone or Email</label>
+    <input type="text" id="contact" name="contact" required>
+    <label for="details">Vehicle/Project Info</label>
+    <textarea id="details" name="details" rows="3" placeholder="Year, Make, Model or Describe Your Project" required></textarea>
+    <button class="button" type="submit">Request Quote</button>
+  </form>
+</div>
+
+<script>
+function showSuccess() {
+  const area = document.getElementById('quote-form-area');
+  area.innerHTML = `
+    <div style="text-align:center;padding:48px 12px 40px 12px;">
+      <div style="font-size:3.5rem;color:#46c7fa;">✔</div>
+      <div style="font-size:1.3rem;color:#46c7fa;font-weight:700;margin-top:18px;">We received your message!</div>
+      <div style="color:#a0a3ad;margin-top:9px;font-size:1.02rem;">Thank you for reaching out. We'll get back to you soon.</div>
+    </div>
+  `;
+  return false; // Prevent actual submit
+}
+</script>
+
 
     <section class="card" id="contact">
       <h2>Contact & Service Area</h2>
