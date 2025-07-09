@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaze Tints | Silicon Valley Window Tinting</title>
+  <meta name="description" content="Amaze Tints - Menlo Park's honest, premium mobile window tinting. Real results. Smart options. Trusted by Silicon Valley.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #a38bff;
+      --accent2: #46c7fa;
+      --dark: #191c24;
+      --card: #23262f;
+      --bg-main: #17181b;
+      --text-main: #f4f4f6;
+      --text-muted: #a0a3ad;
+      --highlight: #46c7fa;
+      --button-hover: #369ad1;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+      font-size: 17px;
+    }
+    header {
+      background: var(--card);
+      padding: 36px 0 16px 0;
+      text-align: center;
+      box-shadow: 0 3px 14px #0004;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 2.6rem;
+      color: var(--accent);
+      letter-spacing: 2.5px;
+      margin-bottom: 0.2em;
+    }
+    .tagline {
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      letter-spacing: .7px;
+      margin-bottom: 0.5em;
+    }
+    nav {
+      margin-top: 14px;
+      margin-bottom: 0;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      font-size: 1.08rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent2);
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 18px 16px 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      margin-top: 35px;
+      box-shadow: 0 1px 15px #0003;
+      padding: 38px 28px 30px 28px;
+    }
+    h2 {
+      color: var(--accent2);
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+      font-size: 1.55rem;
+    }
+    .button {
+      background: var(--accent2);
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 24px;
+      box-shadow: 0 2px 10px #46c7fa26;
+      transition: background 0.16s;
+      display: inline-block;
+    }
+    .button:hover {
+      background: var(--button-hover);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin: 30px 0 16px 0;
+    }
+    .feature {
+      flex: 1 1 220px;
+      background: #22242b;
+      border-radius: 12px;
+      padding: 24px 18px 18px 18px;
+      min-width: 0;
+      color: var(--text-main);
+      box-shadow: 0 1px 9px #0006;
+      font-size: 1.04rem;
+    }
+    .feature strong {
+      color: var(--highlight);
+      font-size: 1.14em;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .info-list {
+      margin: 16px 0 0 0;
+      padding-left: 20px;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .info-list li {
+      margin-bottom: 9px;
+      line-height: 1.4;
+    }
+    .callout {
+      color: var(--highlight);
+      font-size: 1.05rem;
+      margin: 22px 0 8px 0;
+      letter-spacing: 0.1em;
+    }
+    .form-area {
+      margin-top: 38px;
+      padding: 28px 18px 18px 18px;
+      background: #191c24;
+      border-radius: 14px;
+      box-shadow: 0 1px 7px #46c7fa14;
+    }
+    .form-area label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent2);
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+    .form-area input, .form-area textarea {
+      width: 100%;
+      padding: 11px;
+      border: 1.3px solid #22242b;
+      border-radius: 6px;
+      margin-bottom: 17px;
+      background: #22242b;
+      color: #fff;
+      font-size: 1rem;
+      resize: none;
+      transition: border 0.2s;
+    }
+    .form-area input:focus, .form-area textarea:focus {
+      outline: none;
+      border: 1.3px solid var(--accent2);
+    }
+    .form-area button {
+      width: 100%;
+    }
+    .law-section {
+      background: #22242b;
+      color: #b7cef9;
+      border-radius: 14px;
+      box-shadow: 0 1px 7px #46c7fa0c;
+      margin-top: 36px;
+      padding: 30px 22px 18px 22px;
+      font-size: 1.05rem;
+    }
+    .law-section h3 {
+      margin-top: 0;
+      color: var(--accent2);
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+    }
+    .law-section ul { margin-bottom: 12px; }
+    footer {
+      background: var(--card);
+      padding: 32px 0 14px 0;
+      margin-top: 54px;
+      color: var(--text-muted);
+      text-align: center;
+      font-size: 1rem;
+    }
+    @media (max-width: 740px) {
+      .container { max-width: 97vw; }
+      .card { padding: 22px 7vw 18px 7vw; }
+      .features { flex-direction: column; gap: 14px; }
+      .law-section { padding: 18px 6vw 12px 6vw; }
+    }
+    @media (max-width: 440px) {
+      header h1, .logo { font-size: 2rem; }
+      .card { padding: 15px 3vw 13px 3vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Amaze Tints</div>
+    <div class="tagline">Smart, Honest Window Tinting — Menlo Park & Silicon Valley</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#quote">Quote</a>
+      <a href="#law">CA Law</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="card" id="about">
+      <h2>Experience Real Window Tinting Results</h2>
+      <p><b>Silicon Valley’s go-to for honest, premium tinting.</b> We bring pro-quality automotive and residential window tinting straight to your door. Expect modern film, real privacy, true UV & heat control, and a smarter look for your ride—done right, every time.</p>
+      <div class="features">
+        <div class="feature"><strong>Trusted Local</strong> Family-owned, serving Menlo Park and Bay Area for years.</div>
+        <div class="feature"><strong>Smart Film Options</strong> Choose from top-tier ceramic, carbon, and hybrid tints to fit your budget and style.</div>
+        <div class="feature"><strong>Fast Mobile Installs</strong> We come to you—at home, work, or anywhere in the Peninsula.</div>
+        <div class="feature"><strong>No-BS Pricing</strong> Clear quotes. No hidden fees. Pay after you’re happy.</div>
+      </div>
+      <div class="callout">“Amaze Tints made my car look sharp and keeps it cool — best value I found!” – Real customer</div>
+      <ul class="info-list">
+        <li>• 99% UV rejection — protects interiors, skin, & pets</li>
+        <li>• State-legal shades, clean edge-to-edge install</li>
+        <li>• No fading, bubbling, or purple tints — guaranteed</li>
+        <li>• Backed by a real manufacturer lifetime warranty</li>
+      </ul>
+    </section>
+
+    <section class="card" id="services">
+      <h2>What We Offer</h2>
+      <ul class="info-list">
+        <li><b>Auto Window Tinting:</b> Sedans, SUVs, trucks, and EVs — all makes & models</li>
+        <li><b>Residential/Commercial Tinting:</b> Privacy & heat solutions for homes and offices</li>
+        <li><b>Mobile Service:</b> On-site at your home or work, Menlo Park & nearby</li>
+        <li><b>Heat & UV Blocking:</b> Safer, more comfortable drive year-round</li>
+        <li><b>Fast Turnaround:</b> Most cars done in 1–2 hours</li>
+      </ul>
+    </section>
+
+    <section class="law-section" id="law">
+      <h3>California Window Tint Laws (2025): What You Need to Know</h3>
+      <ul>
+        <li><b>Front Side Windows:</b> Must allow ≥70% of light in (Maximum 30% tint; no dark limo tints allowed).</li>
+        <li><b>Windshield:</b> Only top 4 inches ("eyebrow") may be tinted; rest must be clear.</li>
+        <li><b>Rear & Back Side Windows:</b> Any darkness allowed for sedans, SUVs, and vans.</li>
+        <li><b>Mirrors:</b> Dual side mirrors required if back window is tinted.</li>
+        <li><b>Color:</b> No red, blue, or amber tints permitted on any window.</li>
+      </ul>
+      <p><b>Warning:</b> Non-compliant tints can result in fix-it tickets and fines. Police can use a light meter to test tint darkness. All Amaze Tints installs comply with CA law—ask us if you want a legal-limit shade.</p>
+      <p style="color:var(--text-muted);margin-top:10px;font-size:0.96em;">Source: <a href="https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/window-tinting/" target="_blank" style="color:var(--accent2)">CA DMV Tint Law</a></p>
+    </section>
+
+    <section class="card" id="quote">
+      <h2>Get a Free, Honest Quote</h2>
+      <p>Tell us your car or project details. We’ll text or email you a real price—no pressure.</p>
+      <div class="form-area">
+        <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="contact">Phone or Email</label>
+          <input type="text" id="contact" name="contact" required>
+          <label for="details">Vehicle/Project Info</label>
+          <textarea id="details" name="details" rows="3" placeholder="Year, Make, Model or Describe Your Project" required></textarea>
+          <button class="button" type="submit">Request Quote</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact & Service Area</h2>
+      <ul class="info-list">
+        <li>📍 Menlo Park, Palo Alto, Redwood City, Mountain View, Atherton, Los Altos, and more</li>
+        <li>Hours: 8am–7pm, 7 days/week</li>
+        <li>Email: <a href="mailto:amaze.tints@gmail.com" style="color:var(--accent2)">amaze.tints@gmail.com</a></li>
+      </ul>
+      <p style="margin-top: 18px; color: var(--text-muted); font-size: 0.99rem;">Have questions? Text or email anytime. You’ll talk to a real local, never a bot.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Amaze Tints | Menlo Park | Made for Silicon Valley drivers
+  </footer>
+</body>
+</html>
